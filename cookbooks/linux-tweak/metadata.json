@@ -1,0 +1,49 @@
+{
+  "name": "linux-tweak",
+  "description": "Performs various tweaks on fresh Linux installs",
+  "long_description": "Removes Landscape garbage from Ubuntu systems, tweaks system-wide bashrc settings",
+  "maintainer": "Matthew Ahrenstein",
+  "maintainer_email": "@ahrenstein",
+  "license": "See LICENSE.txt",
+  "platforms": {
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "freebsd": ">= 0.0.0"
+  },
+  "dependencies": {
+    "line": ">= 0.0.0",
+    "apt": ">= 0.0.0",
+    "yum-epel": ">= 0.0.0"
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+    "linux-tweak::default": "Call this recipe to run the various tweaks from the cookbook",
+    "linux-tweak::bashrc": "Configure system-wide bashrc preferences so bash looks nice. Also adds some useful aliases",
+    "linux-tweak::packages": "Adds some useful packages that aren't installed by default and removes landscape from Ubuntu systems"
+  },
+  "version": "0.3.2",
+  "source_url": "https://github.com/ahrenstein/ChefCookbook-linux-tweak",
+  "issues_url": "https://github.com/ahrenstein/ChefCookbook-linux-tweak/issues",
+  "privacy": false
+}
