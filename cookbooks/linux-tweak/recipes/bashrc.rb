@@ -88,7 +88,7 @@ end
 # Loop through the max amount of local users we expect to have on the system and remove their personal .bashrc files if Ubuntu
 # otherwise place a file in the correct path to source the system-wide bashrc
 node['etc']['passwd'].each do |user, data|
-  if (data['uid'].to_i >= 500) and (data['uid'].to_i <=2000)
+  if (data['uid'].to_i >= 1000) and (data['uid'].to_i <=2000)
 
     case node['platform_family']
       when 'debian', 'ubuntu'

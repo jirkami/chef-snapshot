@@ -60,7 +60,7 @@ case node['os']
     end
 
     # Make sure packages we care about are installed
-    %w{bash curl git atop telnet mdadm sysstat}.each do |pkg|
+    %w{bash curl git atop telnet mdadm sysstat elinks bzip2}.each do |pkg|
       package pkg do
         action :install
       end
